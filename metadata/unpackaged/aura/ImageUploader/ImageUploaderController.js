@@ -12,7 +12,7 @@
             	var resultToast = $A.get("e.force:showToast");
         		resultToast.setParams({
                             "title": "Success!",
-                            "message": uploadedFiles.length + "file is uploaded successfully."
+                            "message": uploadedFiles.length + "file uploaded successfully."
                         });
         		resultToast.fire();;
         	}
