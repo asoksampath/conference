@@ -65,7 +65,7 @@
     <!-- Shows deploying code & running tests for code in directory -->
     <target name="deployCode">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="metadata/unpackaged" rollbackOnError="true" testLevel="RunSpecifiedTests" checkOnly="true">
+      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="metadata/unpackaged" rollbackOnError="true" checkOnly="true">
         <!--<runTest>TestCorporateDealingCalculatorConP</runTest>-->
       </sf:deploy>
     </target>
